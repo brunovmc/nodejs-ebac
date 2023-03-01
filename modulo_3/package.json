@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "npm": "^9.4.2"
+  },
+  "name": "estruturando",
+  "version": "0.0.1",
+  "description": "intro repo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./app.js"
+  },
+  "author": "Bruno Vidigal",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
