@@ -4,6 +4,8 @@ const path = require("path");
 const mainRouter = require("./routes/main");
 const routerPedidos = require("./routes/pedidos");
 const routerPerfil = require("./routes/perfil");
+const { connect } = require("./models");
+
 const app = express();
 const port = 3000;
 
@@ -17,5 +19,6 @@ app.use("/pedidos", routerPedidos);
 app.use("/", mainRouter);
 
 app.listen(port, () => {
+  connect();
   console.log(`Server running on port:${port}`);
 });

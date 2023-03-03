@@ -1,1 +1,7 @@
-<h1>pedidos rota raiz pizzaria <%= nomeUsuario %></h1>
+<h1>rota raiz de pedidos da pizzaria <%= nomeDoUsuario %></h1>
+
+<ul>
+  <% pedidos.map((pedido) => { %>
+  <li>Pedido do <%= pedido.cliente.nome %> <%= pedido.cliente.sobrenome %></li>
+  <% }) %>
+</ul>
