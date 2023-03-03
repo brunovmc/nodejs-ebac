@@ -1,6 +1,6 @@
 const { Schema } = require("mongoose");
 
-const Pedido = new Schema({
+const Pedido = Schema({
   cliente: {
     nome: {
       type: String,
